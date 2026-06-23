@@ -1,0 +1,206 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Golia Community Guidelines & EULA</title>
+
+<style>
+:root{
+  --text:#1f2329;
+  --muted:#68707c;
+  --ink:#14171b;
+  --glass:rgba(255,255,255,.68);
+  --paper:rgba(255,255,255,.82);
+  --line:rgba(45,55,80,.16);
+  --blue:#35c7f4;
+  --violet:#a78bfa;
+  --pink:#f0b6d8;
+  --mint:#6ee7df;
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+  color:var(--text);
+  line-height:1.68;
+  background:
+    radial-gradient(circle at 0% 0%,rgba(255,255,255,.95),rgba(255,255,255,.54) 19%,transparent 42%),
+    radial-gradient(circle at 10% 88%,rgba(53,199,244,.45),rgba(53,199,244,.18) 20%,transparent 48%),
+    radial-gradient(circle at 100% 24%,rgba(167,139,250,.42),rgba(167,139,250,.18) 25%,transparent 55%),
+    radial-gradient(circle at 84% 96%,rgba(240,182,216,.38),rgba(240,182,216,.15) 25%,transparent 52%),
+    linear-gradient(145deg,#fbfeff 0%,#edfaff 34%,#f1f0ff 68%,#fff7fb 100%);
+  background-attachment:fixed;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(120deg,rgba(255,255,255,.55),transparent 48%),
+    repeating-linear-gradient(90deg,rgba(60,70,100,.025) 0 1px,transparent 1px 42px);
+  opacity:.75;
+}
+.wrap{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+  margin:0 auto;
+  padding:14px 12px 46px;
+}
+.hero{
+  position:relative;
+  min-height:250px;
+  overflow:hidden;
+  border-radius:0 0 34px 34px;
+  margin:0 -12px 22px;
+  padding:30px 24px 24px;
+  background:
+    radial-gradient(circle at 16% 12%,rgba(110,231,223,.42),transparent 34%),
+    radial-gradient(circle at 88% 22%,rgba(167,139,250,.36),transparent 38%),
+    linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,.56));
+  border-bottom:1px solid var(--line);
+  box-shadow:0 22px 60px rgba(82,96,140,.14);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  right:-86px;
+  top:40px;
+  width:220px;
+  height:220px;
+  border-radius:44%;
+  background:linear-gradient(135deg,rgba(53,199,244,.32),rgba(167,139,250,.28),rgba(240,182,216,.22));
+  filter:blur(2px);
+  transform:rotate(18deg);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  left:24px;
+  right:24px;
+  bottom:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--line),transparent);
+}
+.hero>*{position:relative;z-index:1}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:5px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.62);
+  border:1px solid rgba(60,70,100,.12);
+  color:#56627d;
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.badge:before{
+  content:"";
+  width:7px;height:7px;border-radius:50%;
+  background:linear-gradient(135deg,var(--mint),var(--violet));
+  box-shadow:0 0 14px rgba(53,199,244,.55);
+}
+h1{
+  margin:18px 0 10px;
+  font-size:clamp(32px,10vw,50px);
+  line-height:.98;
+  letter-spacing:-.055em;
+  max-width:360px;
+}
+.hero p{
+  max-width:560px;
+  font-size:14px;
+  color:#323946;
+  margin:9px 0;
+}
+.meta{
+  color:var(--muted);
+  font-size:12px;
+}
+.note{
+  margin-top:16px;
+  padding:13px 14px;
+  border-radius:18px;
+  background:rgba(255,255,255,.68);
+  border:1px solid rgba(60,70,100,.12);
+  box-shadow:0 10px 28px rgba(90,110,160,.08);
+  color:#303640;
+  font-size:13.5px;
+}
+.card{
+  position:relative;
+  margin:0 0 14px 18px;
+  padding:18px 17px 18px 20px;
+  border-radius:22px;
+  background:linear-gradient(180deg,rgba(255,255,255,.84),rgba(255,255,255,.62));
+  border:1px solid rgba(60,70,100,.12);
+  box-shadow:0 14px 38px rgba(56,76,116,.10), inset 0 1px 0 rgba(255,255,255,.78);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.card:before{
+  content:"";
+  position:absolute;
+  left:-18px;
+  top:22px;
+  bottom:-18px;
+  width:1px;
+  background:linear-gradient(180deg,var(--line),transparent);
+}
+.card:after{
+  content:"";
+  position:absolute;
+  left:-24px;
+  top:20px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#fff;
+  border:2px solid rgba(83,99,168,.38);
+  box-shadow:0 0 0 5px rgba(255,255,255,.5);
+}
+.card:nth-of-type(3n+1){
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(244,252,255,.64));
+}
+.card:nth-of-type(3n+2){
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(248,245,255,.64));
+}
+.card:nth-of-type(3n+3){
+  background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,247,252,.64));
+}
+h2{
+  margin:0 0 10px;
+  font-size:20px;
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+h3{
+  margin:14px 0 6px;
+  font-size:15.5px;
+}
+p,li{
+  font-size:14px;
+  color:#303640;
+}
+p{margin:7px 0}
+ul{padding-left:18px;margin:7px 0 0}
+li{margin:5px 0}
+a{color:#5363a8}
+.small{font-size:12px;color:var(--muted)}
+@media(max-width:420px){
+  .wrap{padding:10px 10px 38px}
+  .hero{margin:0 -10px 18px;padding:26px 20px 22px;min-height:232px;border-radius:0 0 28px 28px}
+  .card{margin-left:15px;padding:16px 15px 16px 18px;border-radius:19px}
+  .card:before{left:-15px}
+  .card:after{left:-21px}
+  h1{font-size:clamp(30px,10vw,42px)}
+  h2{font-size:19px}
+  p,li{font-size:14px}
+}
+</style>
+
+</head><body><div class="wrap">
+<div class="hero"><div class="badge">Golia Community</div><h1>Community Guidelines & EULA</h1><div class="meta">Last updated: June 10, 2026 · Contact: <a href="mailto:support@golia.fin">support@golia.fin</a></div><p>These guidelines explain how users should behave in Golia’s eyewear inspiration, AI try-on, and community features.</p><div class="note">Use Golia respectfully, protect privacy, and only upload content you have permission to use.</div></div>
+<div class='card'><h2>1. Community Purpose</h2><p>Golia is intended to help users explore eyewear styles, preview glasses with AI, share frame inspiration, discuss looks, follow creators, and participate in a positive eyewear-focused community. These guidelines apply to all uploads, AI try-on results, community posts, comments, messages, profile pages, reports, and interactions on Golia.</p></div><div class='card'><h2>2. Respectful Conduct</h2><p>Users must treat others respectfully. Harassment, bullying, intimidation, threats, hateful conduct, stalking, malicious false reporting, or repeated hostile behavior are prohibited. Users may not attack or degrade people based on protected characteristics.</p></div><div class='card'><h2>3. Photo Consent and Privacy</h2><p>Do not upload another person’s photo, face image, private reference, or profile image without permission. This includes friends, strangers, customers, models, public figures, minors, or people appearing in group photos. You may not share another person’s private information, including addresses, phone numbers, email addresses, private messages, IDs, payment details, or confidential customer information.</p></div><div class='card'><h2>4. AI Try-On Rules</h2><p>Users may not use AI try-on features to create harmful, deceptive, harassing, sexual, exploitative, illegal, impersonating, or privacy-invasive content. Users may not attempt to bypass safety systems, manipulate AI behavior, generate misleading identity-related content, or use AI outputs to defame or deceive others.</p></div><div class='card'><h2>5. Eyewear Safety and Product Disclaimer</h2><p>Golia content is for digital visualization and inspiration. AI try-on results do not confirm product fit, prescription suitability, optical performance, lens safety, or medical appropriateness. Users should consult qualified optical professionals for prescriptions, eye health concerns, and professional fitting advice.</p></div><div class='card'><h2>6. Prohibited Content</h2><ul><li>Illegal, harmful, violent, threatening, or exploitative content.</li><li>Hate speech, harassment, bullying, or targeted abuse.</li><li>Sexually explicit, pornographic, exploitative, or non-consensual intimate content.</li><li>Scams, phishing, impersonation, misleading promotions, or counterfeit claims.</li><li>Content that exposes another person’s private information.</li><li>Copyright-infringing photos, logos, product images, or artwork.</li><li>Spam, bots, fake engagement, scraping, or platform manipulation.</li></ul></div><div class='card'><h2>7. Intellectual Property</h2><p>Users should only upload photos, eyewear images, logos, product references, or creative materials that they own or are authorized to use. Unauthorized use of copyrighted photos, brand logos, product images, celebrity images, or third-party materials may result in removal or account enforcement.</p></div><div class='card'><h2>8. Messaging and Style Interaction</h2><p>Messaging and community interactions must remain respectful and style-focused. Users may not harass creators, pressure users, solicit illegal services, send spam, request sensitive personal data, or use chat features to abuse others.</p></div><div class='card'><h2>9. Consumable Purchases and Fair Use</h2><p>Consumable digital items must be used honestly and in accordance with platform rules. Users may not exploit purchase systems, manipulate item delivery, abuse refunds, or use purchased items to harass or manipulate others.</p></div><div class='card'><h2>10. Reporting and Moderation</h2><p>Users are encouraged to report harmful content, AI misuse, privacy violations, copyright infringement, impersonation, harassment, scams, misleading product claims, or other misuse. Golia may review reports using manual review, automated tools, safety signals, purchase records, moderation history, and community reports.</p></div><div class='card'><h2>11. Enforcement</h2><p>Golia may take enforcement action at its discretion, including warnings, content removal, reduced visibility, messaging restrictions, AI generation restrictions, purchase restrictions, temporary suspension, permanent account termination, or preservation of records for safety and legal purposes.</p></div>
+<div class="card"><h2>Contact</h2><p>If you have questions about this document, AI try-on features, purchases, privacy, reports, or account matters, contact us at <a href="mailto:support@golia.fin">support@golia.fin</a>.</p><p class="small">© 2026 Golia. All rights reserved.</p></div>
+</div></body></html>
