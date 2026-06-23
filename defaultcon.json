@@ -1,0 +1,197 @@
+{
+  "brandCore": {
+    "name": "Golia",
+    "theme": "eyewear_try_on",
+    "mainView": "today",
+    "locale": "en-US"
+  },
+  "visualTheme": {
+    "baseTone": "warm_ivory",
+    "accentTone": "sun_yellow",
+    "lineTone": "ink_black",
+    "cardRadius": 26
+  },
+  "topHeader": {
+    "title": "Golia",
+    "gearVisible": true,
+    "dividerLine": true,
+    "titleWeight": "bold"
+  },
+  "todaySection": {
+    "title": "Today",
+    "layout": "single_large_card",
+    "topGap": 34,
+    "sideMargin": 26
+  },
+  "heroFrame": {
+    "framebue": "renrenjiji",
+    "title": "Morning Glow",
+    "mark": "FEATURED",
+    "coverName": "clear_frame_portrait"
+  },
+  "heroCopy": {
+    "headline": "Morning Glow",
+    "bodyText": "Start your day with transparent frames for a clean minimalist look.",
+    "tone": "calm_editorial"
+  },
+  "heroActionRow": {
+    "mainText": "TRY IT ON",
+    "secondText": "EXPLORE MORE",
+    "mainStyle": "yellow_pill",
+    "secondStyle": "outline_pill"
+  },
+  "eyewearShape": {
+    "mainShape": "rectangular",
+    "lensTone": "clear",
+    "rimStyle": "transparent",
+    "bridgeStyle": "soft_bridge"
+  },
+  "wearScene": {
+    "occasion": "morning",
+    "outfitMood": "minimal_suit",
+    "faceMood": "clean_beauty",
+    "seasonHint": "early_spring"
+  },
+  "weatherReady": {
+    "title": "Weather Ready",
+    "subTitle": "SUNNY DAY PICKS",
+    "weather": "sunny",
+    "feedMode": "horizontal_cards"
+  },
+  "weatherItemOne": {
+    "itemId": "golia_aviator_002",
+    "title": "Oversized Aviators",
+    "coverName": "gold_aviators_sun",
+    "noteText": "Perfect for high-glare morning commutes."
+  },
+  "weatherItemTwo": {
+    "itemId": "golia_amber_003",
+    "title": "Amber Walk",
+    "coverName": "amber_lens_walk",
+    "noteText": "Warm lenses for bright afternoon walks."
+  },
+  "weatherCardStyle": {
+    "cardWidth": 330,
+    "cardRadius": 24,
+    "borderLine": true,
+    "imageRadius": 12
+  },
+  "quickTryOn": {
+    "text": "TRY IT ON",
+    "enabled": true,
+    "buttonTone": "outline_dark",
+    "resultMode": "face_fit"
+  },
+  "fitGuide": {
+    "faceNeed": "front_face",
+    "landmarks": [
+      "eyes",
+      "nose",
+      "ears"
+    ],
+    "fitLevel": "natural",
+    "autoAlign": true
+  },
+  "tryOnInput": {
+    "cameraEnabled": true,
+    "albumEnabled": true,
+    "maxPhotoCount": 1,
+    "photoNeed": "clear_face"
+  },
+  "tryOnResult": {
+    "resultSize": "portrait",
+    "saveEnabled": true,
+    "shareEnabled": true,
+    "watermark": false
+  },
+  "styleFocus": {
+    "title": "Style Spotlight",
+    "cardTone": "yellow",
+    "authorLabel": "Editor's Choice",
+    "portraitName": "glasshouse_editor"
+  },
+  "styleFocusCopy": {
+    "quoteText": "This week we are drawn to the structural clarity of the Glasshouse Collection.",
+    "collectionName": "Glasshouse Collection",
+    "mood": "architectural_clear"
+  },
+  "collectionInfo": {
+    "name": "Glasshouse Collection",
+    "keyFrame": "transparent_square",
+    "material": "light_acetate",
+    "colorMood": "clear_gold"
+  },
+  "communityFeed": {
+    "enabled": true,
+    "title": "Community",
+    "defaultSort": "new_and_popular",
+    "cardKind": "look_post"
+  },
+  "communityPost": {
+    "sampleId": "post_clear_frame_day_001",
+    "authorName": "Mira",
+    "lookName": "Clean Morning Look",
+    "likes": 1280
+  },
+  "profileState": {
+    "savedFrames": 18,
+    "tryOnCount": 7,
+    "likedLooks": 34,
+    "recentViews": 12
+  },
+  "frameCatalog": {
+    "groups": [
+      "clear",
+      "sun",
+      "bold",
+      "classic"
+    ],
+    "defaultGroup": "clear",
+    "dailyCount": 12,
+    "weatherCount": 6
+  },
+  "recommendationRules": {
+    "mode": "style_weather_match",
+    "dailyRefreshHours": 24,
+    "faceShapeWeight": 0.4,
+    "weatherWeight": 0.35
+  },
+  "bottomTabs": {
+    "active": "TODAY",
+    "items": [
+      "TODAY",
+      "COMMUNITY",
+      "TRY ON",
+      "PROFILE"
+    ],
+    "barTone": "warm_ivory"
+  },
+  "noticeCenter": {
+    "unreadCount": 1,
+    "dailyLookAlert": true,
+    "weatherPickAlert": true,
+    "quietHours": {
+      "enabled": true,
+      "start": "22:00",
+      "end": "08:00"
+    }
+  },
+  "saveState": {
+    "currentFrameSaved": false,
+    "folderName": "Clear Looks",
+    "maxSavedCount": 300,
+    "heartVisible": true
+  },
+  "screenLayout": {
+    "safeTop": 18,
+    "heroImageHeight": 540,
+    "sectionGap": 34,
+    "bottomInset": 18
+  },
+  "sessionState": {
+    "lastOpenTab": "TODAY",
+    "lastFrameId": "golia_morning_glow_001",
+    "lastWeatherGroup": "SUNNY DAY PICKS",
+    "sessionTryCount": 2
+  }
+}
